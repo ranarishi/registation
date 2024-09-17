@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5e5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff6b81;
+    margin-bottom: 5px;
+}
+.h{
+  margin-bottom: 0px;
+}
+h3{
+  margin-top:-20px;
+}
+
+.meetup-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meetup-card {
+    position: relative;
+    width: 90%;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meetup-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.meetup-card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+}
+
+.story-content {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+button {
+    background-color: #ff6b81;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e17055;
+}
+
+#wish {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #2d3436;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
